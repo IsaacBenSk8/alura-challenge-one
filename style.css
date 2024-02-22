@@ -171,6 +171,13 @@ p {
     font-size: 1em;
 }
 
+.copiar {
+    cursor: pointer;
+    padding: 0;
+    border: none;
+    background-color: white;
+}
+
 footer {
     display: none;
 }
