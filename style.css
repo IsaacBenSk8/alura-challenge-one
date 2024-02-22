@@ -3,6 +3,11 @@
     /* border: 1px solid black; */
     overflow: hidden;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     font-family: "Inter", sans-serif;
