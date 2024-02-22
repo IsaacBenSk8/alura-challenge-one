@@ -1,0 +1,381 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+    overflow: hidden;
+}
+* {
+    margin: 0;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    background: #F3F5FC;
+    width: 100%;
+    height: 100dvh;
+    display: flex;
+    /* justify-content: space-around; */
+    margin-left: 6rem;
+    place-items: center;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    }
+
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(148, 141, 141); 
+    border-radius: 2em;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #4d4444; 
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 90%;
+}
+
+header {
+    width: 14%;
+    height: 15%;
+    display: flex;
+    place-items: center;
+}
+/* 
+.logo {
+    width: 1em;
+    height: 1em;
+} */
+
+.encriptador {
+    width: 80%;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20%;
+}
+
+.mensaje {
+    width: 100%;
+    height: 85%;
+}
+
+textarea {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: #F3F5FC;
+    resize: none;
+    color: #0A3871;
+    font-size: 2em;
+    overflow-y: scroll;
+}
+
+textarea::placeholder {
+    color: #0A3871;
+    font-size: 1em;
+
+}
+
+.panel {
+    width: 100%;
+    height: 12%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.advertencia {
+    display: flex;
+    place-items: center;
+    height: 20%;
+}
+
+.advertenciaTexto {
+    color: #495057;
+    font-size: 0.6em;
+    margin-left: 0.6em;
+}
+
+.botones {
+    width: 100%;
+    height: 70%;
+    display: flex;
+}
+
+.botonEncriptar, .botonDesencriptar {
+    width: 48%;
+    height: 100%;
+    border: 0.1em solid #0A3871;
+    border-radius: 1em;
+    cursor: pointer;
+}
+
+.botonEncriptar {
+    background-color: #0A3871;
+    color: white;
+}
+
+.botonDesencriptar {
+    color: #0A3871;
+    margin-left: 2em;
+}
+
+aside {
+    width: 25%;
+    height: 90%;
+    border-radius: 2.5em;
+    margin-left: 6rem;
+    background-color: white;
+    box-shadow: 0px 5px 10px gray;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    place-content: center;
+}
+
+p {
+    overflow-wrap: break-word;
+}
+
+.resultado {
+    display: none;
+    padding: 1em;
+    background-color: white;
+}
+
+.empty, .type {
+    width: 80%;
+    height: auto;
+    text-align: center;
+    color: #343A40;
+}
+
+.empty {
+    font-size: 1.5em;
+    font-weight: 700;
+    padding: 1em;
+}
+
+.type {
+    font-size: 1em;
+}
+
+footer {
+    display: none;
+}
+
+@media screen and (max-width: 425px) {
+    body {
+        height: 100%;
+        flex-direction: column;
+        margin-left: 0;
+    }
+
+    main {
+        width: 80%;
+        height: auto;
+        margin-bottom: 2em;
+    }
+
+    header {
+        width: 2em;
+        height: 10em;
+    }
+    
+    .encriptador {
+        width: 100%;
+        margin-left: 0;
+        height: auto;
+    }
+
+    .mensaje {
+        height: auto;
+    }
+
+    textarea {
+        height: 6em;
+    }
+
+    .panel {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .advertencia {
+        height: 2em;
+    }
+
+    .botones {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .botonEncriptar, .botonDesencriptar {
+        width: 100%;
+        height: 4.3em;
+        border: 0.1em solid #0A3871;
+        border-radius: 1.5em;
+        cursor: pointer;
+        margin-top: 1em;
+        margin-left: 0;
+    }
+
+    aside {
+        width: 80%;
+        height: fit-content;
+        margin-left: 0;
+        margin: 1em 0;
+
+    }
+
+    .svgBuscar {
+        display: none;
+    }
+
+    .empty, .type {
+        width: 90%;
+        height: auto;
+        text-align: center;
+    }
+    
+    .empty {
+        font-size: 1.5em;
+    }
+    
+    .type {
+        width: 80%;
+        font-size: 1em;
+    }
+
+    footer {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        color: #0A3871;
+    }
+
+    .footer {
+        font-size: .8em;
+        margin: .5em;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    body {
+        height: 100%;
+        flex-direction: column;
+        margin-left: 0;
+    }
+
+    main {
+        width: 80%;
+        height: auto;
+        margin-bottom: 2em;
+    }
+
+    header {
+        width: 2em;
+        height: 10em;
+    }
+    
+    .encriptador {
+        width: 100%;
+        margin-left: 0;
+        height: auto;
+    }
+
+    .mensaje {
+        height: auto;
+    }
+
+    textarea {
+        height: 6em;
+    }
+
+    .panel {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .advertencia {
+        height: 2em;
+    }
+
+    .botones {
+        width: 100%;
+        height: auto;
+    }
+
+    .botonEncriptar, .botonDesencriptar {
+        width: 100%;
+        height: 4.3em;
+        border: 0.1em solid #0A3871;
+        border-radius: 1.5em;
+        cursor: pointer;
+        margin-top: 1em;
+    }
+
+    aside {
+        width: 80%;
+        height: fit-content;
+        margin-left: 0;
+        margin: 1em 0;
+
+    }
+
+    .svgBuscar {
+        display: none;
+    }
+
+    .empty, .type {
+        width: 90%;
+        height: auto;
+        text-align: center;
+    }
+    
+    .empty {
+        font-size: 1.5em;
+        padding-top: 1.5em;
+    }
+    
+    .type {
+        width: 80%;
+        font-size: 1em;
+        padding-bottom: 2em;
+    }
+
+    footer {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        color: #0A3871;
+    }
+
+    .footer {
+        font-size: .8em;
+        margin: .5em;
+    }
+}
+
+.remover {
+    display: none;
+}
+
+.agregar {
+    display: block;
+}
