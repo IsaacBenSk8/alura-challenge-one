@@ -93,7 +93,13 @@ textarea::placeholder {
 .advertencia {
     display: flex;
     place-items: center;
+    justify-content: space-between;
     height: 25%;
+}
+
+.advertenciaTxt {
+    display: flex;
+    place-items: center;
 }
 
 .advertenciaTexto {
@@ -106,7 +112,6 @@ textarea::placeholder {
     border: none;
     background-color: #F3F5FC;
     cursor: pointer;
-    margin-left: 5%;
     padding: 0;
 }
 
