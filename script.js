@@ -76,10 +76,20 @@ function fixer(match) {
 }
 
 function copiar() {
-  var copyText = document.getElementById("resultado");
+  let copyText = document.getElementById("resultado");
 
   copyText.select();
-  copyText.setSelectionRange(0, 99999)
+  copyText.setSelectionRange(0, 99999);
 
   navigator.clipboard.writeText(copyText.value);
+}
+
+function borrar() {
+  document.getElementById('mensaje').value = "";
+  document.getElementById('svgBuscar').classList.remove('remover');
+  document.getElementById('empty').classList.remove('remover');
+  document.getElementById('type').classList.remove('remover');
+  document.getElementById('resultado').classList.remove('agregar')
+  document.getElementById('copiar').classList.remove('agregar');
+  document.getElementById('copiar').classList.add('remover');
 }

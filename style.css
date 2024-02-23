@@ -51,11 +51,6 @@ header {
     display: flex;
     place-items: center;
 }
-/* 
-.logo {
-    width: 1em;
-    height: 1em;
-} */
 
 .encriptador {
     width: 80%;
@@ -98,13 +93,21 @@ textarea::placeholder {
 .advertencia {
     display: flex;
     place-items: center;
-    height: 20%;
+    height: 25%;
 }
 
 .advertenciaTexto {
     color: #495057;
     font-size: 0.6em;
     margin-left: 0.6em;
+}
+
+.borrar {
+    border: none;
+    background-color: #F3F5FC;
+    cursor: pointer;
+    margin-left: 5%;
+    padding: 0;
 }
 
 .botones {
